@@ -11,6 +11,7 @@
 <meta name="theme-color" content="#1a1a19">
 <link rel="apple-touch-icon" href="icon.png">
 <link rel="icon" type="image/png" href="icon.png">
+<link rel="manifest" href="manifest.json">
 <style>
   :root {
     --page: #f9f9f7; --surface: #fcfcfb; --text: #0b0b0b; --text-2: #52514e;
@@ -129,6 +130,13 @@ document.getElementById("lock-form").addEventListener("submit", async e => {
     document.getElementById("pw").select();
   }
 });
+</script>
+<script>
+// Service worker : uniquement en http(s). En file:// (double-clic) on ne fait rien,
+// l'app continue de fonctionner normalement.
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
 </script>
 </body>
 </html>
