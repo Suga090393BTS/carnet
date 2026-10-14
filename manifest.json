@@ -1,7 +1,7 @@
 {
   "name": "Aurum — Patrimoine",
   "short_name": "Aurum",
-  "description": "Suivi de patrimoine chiffré, 100 % local.",
+  "description": "Suivi de patrimoine chiffré, synchronisé entre vos appareils sans jamais circuler en clair.",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",
