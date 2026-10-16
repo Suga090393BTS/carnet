@@ -1,7 +1,7 @@
 {
-  "name": "Aurum — Patrimoine",
+  "name": "Aurum",
   "short_name": "Aurum",
-  "description": "Suivi de patrimoine chiffré, synchronisé entre vos appareils sans jamais circuler en clair.",
+  "description": "Carnet chiffré, synchronisé entre vos appareils sans jamais circuler en clair.",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",
